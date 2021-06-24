@@ -1,24 +1,33 @@
-# README
+# Introduction
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple application that triggers user features, based on rete rules.
 
-Things you may want to cover:
+## Endpoints
 
-* Ruby version
+### Queries
 
-* System dependencies
+```graphql
+query features($userId: ID!) {
+  features(userId: $userId)
+}
+```
 
-* Configuration
+```json
+{
+    "userId": 1
+}
+```
 
-* Database creation
+### Mutations
 
-* Database initialization
+```graphql
+mutation strike($userId: ID!) {
+    strike(userId: $userId)
+}
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```json
+{
+    "userId": 1
+}
+```
