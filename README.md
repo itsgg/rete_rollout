@@ -72,7 +72,7 @@ Rollout.instance.clear!
 
 ```ruby
 Rollout.instance.activate_percentage(:joza, 20) # Can be randomized
-Rollout.instance.deactivate_percentage(:joza, 20)
+Rollout.instance.deactivate_percentage(:joza)
 ```
 
 ## Rete
