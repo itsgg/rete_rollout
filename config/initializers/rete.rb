@@ -13,7 +13,6 @@ class Rete
   end
 end
 
-
 # Rules can be defined any where
 Rete.instance.rule 'level-up' do
   forall do
